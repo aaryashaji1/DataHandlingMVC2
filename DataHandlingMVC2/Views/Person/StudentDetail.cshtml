@@ -4,13 +4,20 @@
 }
 
 <h2>Student-Detail</h2>
+<table border="1">
+    <tr>
+        <td>ID</td>
+        <td>Name</td>
+        <td>Class</td>
+    </tr>
 
-@foreach (var item in Model)
-{
-    @item.ID
-    <br/>
-    @item.Name
-    <br/>
-    @item.Class
-    <br />
-}
+    @foreach (var item in Model)
+    {
+
+    <tr> 
+        <td>@item.ID</td>
+        <td>@item.Name</td> 
+        <td>@item.Class</td>
+    </tr>
+     }
+</table>
