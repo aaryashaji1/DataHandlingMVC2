@@ -1,0 +1,16 @@
+﻿@model List<DataHandlingMVC2.Models.Person>
+@{
+    ViewBag.Title = "StudentDetail";
+}
+
+<h2>Student-Detail</h2>
+
+@foreach (var item in Model)
+{
+    @item.ID
+    <br/>
+    @item.Name
+    <br/>
+    @item.Class
+    <br />
+}
